@@ -12,6 +12,29 @@
         <h1>
             Table
         </h1>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Sl No.</th>
+                <th scope="col">Movie Poster</th>
+                <th scope="col">Movie Name</th>
+                <th scope="col">Plot</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% movies.forEach(movie => { %>
+                    <tr>
+                        <td><strong><%= movie.id %></strong></td>
+                        <td><img src="<%= movie.posterUrl %>" alt="<% movie.title %> Poster" width="50px"></td>
+                        <td>
+                            <div><h5><%= movie.title %></h5></div>
+                            <div><%= movie.year %></div>
+                        </td>
+                        <td><%= movie.plot %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+          </table>
     </div>
 </body>
 </html>

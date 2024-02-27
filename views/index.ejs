@@ -27,7 +27,7 @@
         <ul class="list-group">
             <% movies.forEach(movie => { %>
                 <li class="list-group-item movie">
-                    <img src="<%= movie.posterUrl %>" alt="<% movie.title %> Poster" width="200px" onerror="this.parentNode.style.display='none'">
+                    <img src="<%= movie.posterUrl %>" alt="<% movie.title %> Poster" width="200px">
                     <div class="movie-details">
                         <h2><%= movie.title %>(<%= movie.year %>)</h2>
                         <p><strong>Directors: <%= movie.director %></strong></p>
