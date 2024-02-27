@@ -29,7 +29,7 @@
                 <% for (let j = i; j < Math.min(i + 3, movies.length); j++) { %>
                         <div class="col-md-4">
                             <div class="card">
-                                <img src="<%= movies[j].posterUrl %>" alt="<%= movies[j].title %> Poster" onerror="<%= 'this.parentNode.parentNode.style.display=\'none\';' %>">
+                                <img src="<%= movies[j].posterUrl %>" alt="<%= movies[j].title %> Poster">
                                 <div class="card-body">
                                     <h5 class="card-title"><%= movies[j].title %> (<%= movies[j].year %>)</h5>
                                     <p class="card-text"><strong>Directors:</strong> <%= movies[j].director %></p>
